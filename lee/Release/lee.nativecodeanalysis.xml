@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\source\lee for 4 neighbors\lee\</FILEPATH>
+      <FILENAME>lee.cpp</FILENAME>
+      <LINE>29</LINE>
+      <COLUMN>13</COLUMN>
+    </SFA>
+    <DEFECTCODE>26434</DEFECTCODE>
+    <DESCRIPTION>Function 'MapCoordinates::getCoordinates' hides a non-virtual function 'Coordinates::getCoordinates' (c.128).</DESCRIPTION>
+    <FUNCTION>MapCoordinates::getCoordinates</FUNCTION>
+    <DECORATED>?getCoordinates@MapCoordinates@@UAEHXZ</DECORATED>
+    <FUNCLINE>29</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\source\lee for 4 neighbors\lee\</FILEPATH>
+      <FILENAME>lee.cpp</FILENAME>
+      <LINE>41</LINE>
+      <COLUMN>13</COLUMN>
+    </SFA>
+    <DEFECTCODE>26434</DEFECTCODE>
+    <DESCRIPTION>Function 'StartCoordinates::getCoordinates' hides a non-virtual function 'Coordinates::getCoordinates' (c.128).</DESCRIPTION>
+    <FUNCTION>StartCoordinates::getCoordinates</FUNCTION>
+    <DECORATED>?getCoordinates@StartCoordinates@@UAEHXZ</DECORATED>
+    <FUNCLINE>41</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\source\lee for 4 neighbors\lee\</FILEPATH>
+      <FILENAME>lee.cpp</FILENAME>
+      <LINE>57</LINE>
+      <COLUMN>13</COLUMN>
+    </SFA>
+    <DEFECTCODE>26434</DEFECTCODE>
+    <DESCRIPTION>Function 'TargetCoordinates::getCoordinates' hides a non-virtual function 'Coordinates::getCoordinates' (c.128).</DESCRIPTION>
+    <FUNCTION>TargetCoordinates::getCoordinates</FUNCTION>
+    <DECORATED>?getCoordinates@TargetCoordinates@@UAEHXZ</DECORATED>
+    <FUNCLINE>57</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\source\lee for 4 neighbors\lee\</FILEPATH>
+      <FILENAME>lee.cpp</FILENAME>
+      <LINE>72</LINE>
+      <COLUMN>13</COLUMN>
+    </SFA>
+    <DEFECTCODE>26434</DEFECTCODE>
+    <DESCRIPTION>Function 'BarrierCoordinates::getCoordinates' hides a non-virtual function 'Coordinates::getCoordinates' (c.128).</DESCRIPTION>
+    <FUNCTION>BarrierCoordinates::getCoordinates</FUNCTION>
+    <DECORATED>?getCoordinates@BarrierCoordinates@@UAEHXZ</DECORATED>
+    <FUNCLINE>72</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\source\lee for 4 neighbors\lee\</FILEPATH>
+      <FILENAME>lee.cpp</FILENAME>
+      <LINE>113</LINE>
+      <COLUMN>71</COLUMN>
+    </SFA>
+    <DEFECTCODE>28182</DEFECTCODE>
+    <DESCRIPTION>Разыменование пустого (NULL) указателя. "maze[row]" содержит то же значение NULL, которое находилось в "maze[row+1]". </DESCRIPTION>
+    <FUNCTION>findWays</FUNCTION>
+    <DECORATED>?findWays@@YAXHHHPAPADPAPAH1AAV?$queue@HV?$deque@HV?$allocator@H@std@@@std@@@std@@@Z</DECORATED>
+    <FUNCLINE>91</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>3</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>d:\source\lee for 4 neighbors\lee\</FILEPATH>
+        <FILENAME>lee.cpp</FILENAME>
+        <LINE>93</LINE>
+        <COLUMN>5</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\source\lee for 4 neighbors\lee\</FILEPATH>
+        <FILENAME>lee.cpp</FILENAME>
+        <LINE>95</LINE>
+        <COLUMN>71</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\source\lee for 4 neighbors\lee\</FILEPATH>
+        <FILENAME>lee.cpp</FILENAME>
+        <LINE>101</LINE>
+        <COLUMN>71</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>ветвь</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>"*maze" может быть равно NULL (Пропустить эту ветвь)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\source\lee for 4 neighbors\lee\</FILEPATH>
+        <FILENAME>lee.cpp</FILENAME>
+        <LINE>107</LINE>
+        <COLUMN>71</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>ветвь</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Пропустить эту ветвь (предполагается, что "&lt;условие ветви&gt;" равно false)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\source\lee for 4 neighbors\lee\</FILEPATH>
+        <FILENAME>lee.cpp</FILENAME>
+        <LINE>113</LINE>
+        <COLUMN>71</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>ветвь</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Пропустить эту ветвь (предполагается, что "&lt;условие ветви&gt;" равно false)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>d:\source\lee for 4 neighbors\lee\</FILEPATH>
+        <FILENAME>lee.cpp</FILENAME>
+        <LINE>113</LINE>
+        <COLUMN>71</COLUMN>
+        <KEYEVENT>
+          <ID>4</ID>
+          <KIND>использование</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"*maze" разыменовано, но, возможно, по-прежнему равно NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\source\lee for 4 neighbors\lee\</FILEPATH>
+      <FILENAME>lee.cpp</FILENAME>
+      <LINE>25</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'Coordinates::X' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>Coordinates::{ctor}</FUNCTION>
+    <DECORATED>??0Coordinates@@QAE@XZ</DECORATED>
+    <FUNCLINE>25</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\source\lee for 4 neighbors\lee\</FILEPATH>
+      <FILENAME>lee.cpp</FILENAME>
+      <LINE>25</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'Coordinates::size' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>Coordinates::{ctor}</FUNCTION>
+    <DECORATED>??0Coordinates@@QAE@XZ</DECORATED>
+    <FUNCLINE>25</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\source\lee for 4 neighbors\lee\</FILEPATH>
+      <FILENAME>lee.cpp</FILENAME>
+      <LINE>25</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'Coordinates::Z' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>Coordinates::{ctor}</FUNCTION>
+    <DECORATED>??0Coordinates@@QAE@XZ</DECORATED>
+    <FUNCLINE>25</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\source\lee for 4 neighbors\lee\</FILEPATH>
+      <FILENAME>lee.cpp</FILENAME>
+      <LINE>25</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'Coordinates::Y' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>Coordinates::{ctor}</FUNCTION>
+    <DECORATED>??0Coordinates@@QAE@XZ</DECORATED>
+    <FUNCLINE>25</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>
